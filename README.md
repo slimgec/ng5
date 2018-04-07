@@ -55,9 +55,27 @@ git add .
 git commit -m "first commit"
 git remote add origin https://github.com/slimgec/ng5.git
 git push -u origin master
-ng build --prod --base-href="https://github.com/slimgec/ng5"
+ng build --prod --base-href="https://slimgec.github.io/ng5"
 angular-cli-ghpages
 
+## Error using angular-cli-ghpages, I needed to change the directory permissions to make it work
+angular-cli-ghpages --no-silent
+sudo chown -R <myusername> /usr/local/lib/node_modules/angular-cli-ghpages/node_modules/gh-pages/
+Note: it takes a few minutes for the site to publish after successful upload
+
+## I did the following, but I don't think it mattered
+Copy your public key and go to your GitHub account -> settings -> create a SSH and GPG keys then click new ssh key and past your public key in the in key text field.
+
+Verify your public key using Git Bash by running the following command:
+
+ssh -vT git@github.com
+
+You will get output like this
+
+    debug1: channel 0: free: client-session, nchannels 1
+    Transferred: sent 3848, received 2040 bytes, in 0.2 seconds
+    Bytes per second: sent 16032.4, received 8499.5
+    debug1: Exit status 1
 
 ## Terminology
 *.scss is called a sass file
