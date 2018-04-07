@@ -53,9 +53,9 @@ create a github account
 call it ng5
 git add .
 git commit -m "first commit"
-git remote add origin get@...
+git remote add origin https://github.com/slimgec/ng5.git
 git push -u origin master
-ng build --prod --base-href="https://<githubaccount>.github.io/ng5/"
+ng build --prod --base-href="https://github.com/slimgec/ng5"
 angular-cli-ghpages
 
 
