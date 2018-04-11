@@ -83,7 +83,7 @@ angular-cli-ghpages --no-silent  <-- This command shows error messages
 sudo chown -R <myusername> /usr/local/lib/node_modules/angular-cli-ghpages/node_modules/gh-pages/  
 Note: it takes a few minutes for github to publish after successful upload
 
-## I did the following, but I don't think it mattered
+## Push to Git without password
 Copy your public key and go to your GitHub account -> settings -> create a SSH and GPG keys then click new ssh key and past your public key in the in key text field.  
 
 Verify your public key using Git Bash by running the following command:  
@@ -95,6 +95,24 @@ You will get output like this
     Bytes per second: sent 16032.4, received 8499.5
     debug1: Exit status 1
     
+If git is asking you for a username and password, your origin remote is pointing at the https url rather than the ssh url.
+
+Change it to ssh.
+
+For example, a github project like Git will have https url
+
+`https://github.com/<Username>/<Project>.git`
+
+and the ssh one:
+
+`git@github.com:<Username>/<Project>.git`
+
+You can do:
+
+`git remote set-url origin git@github.com:<Username>/<Project>.git`
+
+to change the url.
+
 ## Note
 When you download the source from github, remember to run npm install
 
