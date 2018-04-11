@@ -31,7 +31,7 @@ This project was developed using the Learn Angular 5 in less than 60 Minutes - F
 (youtube video https://www.youtube.com/watch?v=oa9cnWTpqP8).
 A written version of this video can be found at coursetro.com (https://coursetro.com/courses/19/Learn-Angular-5-from-Scratch---Angular-5-Tutorial)
 
-#### Installing prerequisites
+## Installing prerequisites
 Install node and npm (https://nodejs.org/en/download/)  
 node -v  
 npm -v
@@ -39,32 +39,32 @@ npm -v
 Install angular (sudo npm install @angular/cli -g)  
 ng -v
 
-#### Creating a new project
+## Creating a new project
 cd src  
 ng new ng5 --style=scss --routing
 
-#### Starting the local server
+## Starting the local server
 cd ng5 
 ng serve
 Then navigated to `http://localhost:4200/` to see app
 
-#### Generating components.
+## Generating components.
 The following commands make new folders in the src/app directory called home & about:  
 g is short for generate, c is short for component, s is short for service   
 ng generate component home  
 ng g c about  
 ng generate service data  
 
-#### To deploy for production
+## To deploy for production
 ng build --prod
 
-#### Simple Deploy
+## Simple Deploy
 If your app does not require a backend server, you can copy the files out 
 of the dist directory. If you put in a subdirectory, then run the command
 
 ng build --prod --base-href="myurl"
 
-#### Deploy using gitpages
+## Deploy using gitpages
 npm install -g angular-cli-ghpages  
 download git  
 setup a github repo  
@@ -77,13 +77,13 @@ git push -u origin master
 ng build --prod --base-href="https://slimgec.github.io/ng5"  
 angular-cli-ghpages  
 
-#### Correcting error produced by angular-cli-ghpages command on Mac
+## Correcting error produced by angular-cli-ghpages command on Mac
 I needed to change the directory permissions to make it work.  
 angular-cli-ghpages --no-silent  <-- This command shows error messages  
 sudo chown -R <myusername> /usr/local/lib/node_modules/angular-cli-ghpages/node_modules/gh-pages/  
 Note: it takes a few minutes for github to publish after successful upload
 
-#### I did the following, but I don't think it mattered
+## I did the following, but I don't think it mattered
 Copy your public key and go to your GitHub account -> settings -> create a SSH and GPG keys then click new ssh key and past your public key in the in key text field.  
 
 Verify your public key using Git Bash by running the following command:  
@@ -95,10 +95,10 @@ You will get output like this
     Bytes per second: sent 16032.4, received 8499.5
     debug1: Exit status 1
     
-#### Note
+## Note
 When you download the source from github, remember to run npm install
 
-#### Terminology
+## Terminology
 A .scss file extension is called a "sassy css" file. (http://www.thesassway.com/editorial/sass-vs-scss-which-syntax-is-better)
 
 A .ts file extension is a type script file. (https://www.typescriptlang.org/)
