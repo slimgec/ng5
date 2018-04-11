@@ -104,3 +104,10 @@ A .scss file extension is called a "sassy css" file. (http://www.thesassway.com/
 A .ts file extension is a type script file. (https://www.typescriptlang.org/)
 
 A .md file extension is a markdown file. (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Helpful links
+Bootswatch for free themes (https://bootswatch.com/)
+
+All about requiring modules for Node (https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8)
+
+Edureka "MEAN Stack Application" tutorial (https://www.youtube.com/watch?v=wtIvu085uU0)
