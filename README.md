@@ -116,6 +116,8 @@ to change the url.
 ## Note
 When you download the source from github, remember to run npm install
 
+When you clone from repository, copy the SSH link version and not the HTTPS version.
+
 ## Terminology
 A .scss file extension is called a "sassy css" file. (http://www.thesassway.com/editorial/sass-vs-scss-which-syntax-is-better)
 
