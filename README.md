@@ -131,3 +131,5 @@ Bootswatch for free themes (https://bootswatch.com/)
 All about requiring modules for Node (https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8)
 
 Edureka "MEAN Stack Application" tutorial (https://www.youtube.com/watch?v=wtIvu085uU0)
+
+JavaScript Decorators: What They Are and When to Use Them (https://www.sitepoint.com/javascript-decorators-what-they-are/)
