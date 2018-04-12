@@ -44,7 +44,7 @@ cd src
 ng new ng5 --style=scss --routing
 
 ## Starting the local server
-cd ng5 
+cd ng5  
 ng serve
 Then navigated to `http://localhost:4200/` to see app
 
